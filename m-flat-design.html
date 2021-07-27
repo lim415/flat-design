@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 플랫디자인</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        img{
+            vertical-align:top;
+        }
+        .wrap{
+            width:360px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .header{
+            background-color:#2ecc71;
+            position: relative;
+        }
+        .header-icons{
+            border-bottom:1px solid #ffffff;
+            padding-top:19px;
+            padding-bottom:19px;
+        }
+        .header-icons>.img-box{
+            display:inline-block;
+            width:30px;
+            margin-left:27px;
+            margin-right:27px;
+        }
+        .header-bottom{
+            padding-top:28px;
+            padding-bottom:28px;
+        }
+        .ci{
+            display:inline-block;
+            width:156px;
+            margin-left:102px;
+        }
+        h1{
+            font-family:'Noto Sans KR';
+            font-weight:700;
+            font-size:24px;
+            line-height:24px;
+            color:#ffffff;
+            text-align:center;
+        }
+        .btn-nav{
+            display:inline-block;
+            width:66px;
+            margin-left:18px;
+        }
+        .line{
+            width:22px;
+            height:2px;
+            margin-left:44px;
+            background-color:#ffffff;
+            border-radius:1px 1px 1px 1px;
+        }
+        .line02{
+            margin-top:7px;
+            margin-bottom:7px;
+        }
+        .line03{
+            margin-bottom:23px;
+        }
+        nav a{
+            font-family:'noto sans kr';
+            font-weight:700;
+            font-size:20px;
+            color:#ffffff;
+            text-decoration:none; 
+
+        } 
+
+        .slider{
+            margin-top: 135px;
+            position:relative;
+        }
+        .nav{
+            padding: 36px 30px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            z-index: 100;
+            display: block;
+            list-style:none;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .l-arrow{
+            position:absolute;
+            left:12px;
+            top:164px;
+            width:20px;
+            height:20px;
+            border-top:4px solid #ffffff;
+            border-left:4px solid #ffffff;
+            transform:rotate(-45deg);
+        }
+        .r-arrow{
+            position:absolute;
+            right:12px;
+            top:164px;
+            width:20px;
+            height:20px;
+            border-top:4px solid #ffffff;
+            border-left:4px solid #ffffff;
+            transform:rotate(135deg);
+        }
+        .contents>div{
+            padding:42px 12px 44px 12px;
+        }
+        .contents>.slider{
+            padding:0;
+        }
+        .new-doc{
+            background-color:#ff0101;
+        }
+        .best-doc{
+            background-color:#ffea01;
+        }
+        .point-flat{
+            background-color:#2836bc;
+        }
+        .best-key{
+            background-color:#ff8a01;
+        }
+        .w3c{
+            background-color:#00f0ff;
+        }
+        .web-std{
+            background-color:#b400ff;
+        }
+        .sns{
+            background-color:#ff7e00;
+        }
+        h2{
+            font-family:'Noto Sans KR';
+            font-weight:700;
+            font-size:24px;
+            color:#ffffff;
+            text-align:center;
+            margin-bottom:27px;
+        }
+        .new-doc>ul>li,.best-doc>ul>li,.best-key>ul>li{
+            font-family:'Noto Sans KR';
+            font-weight:500;
+            font-size:18px;
+            color:#ffffff;
+            margin-bottom:1px;
+            list-style:none;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .best-key::after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .best-key>.first-ul{
+            float:left;
+        }
+        .best-key>.last-ul{
+            float:right;
+        }
+        .best-key>ul>li{
+            width:156px;
+            text-align:center;
+        }
+        .contents>.point-flat{
+            padding-top:50px;
+        }
+        .point-flat-first{
+            margin-bottom:36px;
+        }
+        .point-heart{
+            background-color:#ffea01;
+            border-radius:10px;
+            padding:36px 118px 36px 118px;
+        }
+        
+        .point-cloud{
+            background-color:#ff0101;
+            border-radius:10px;
+            padding:36px 118px 36px 118px;
+        }
+        .w3c>.img-box{
+            padding:0 74px 0 74px;
+        }
+        .web-std::after,.sns::after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .web-std>div,.sns>.img-box{
+            float:left;
+            width:62px;
+            padding:0 25px 0 25px; 
+        }
+        h3,address{
+            font-family:'Noto Sans KR';
+            font-weight:500;
+            font-size:18px;
+            color:#ffffff;
+            text-align:center;
+        }
+        .footer{
+            padding:24px 12px 24px 12px;
+            background-color:#2c3e50;
+        }
+        .address{            
+            font-style:normal;
+            line-height:24px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-icons clearfix">
+                <div class="img-box box01">
+                    <img src="./images/icon-home.svg" alt="홈으로 이동">
+                </div>
+                <div class="img-box box02">
+                    <img src="./images/icon-secret.svg" alt="보안 설정">
+                </div>
+                <div class="img-box box03">
+                    <img src="./images/icon-login.svg" alt="사용자 로그인">
+                </div>
+                <div class="img-box box04">
+                    <img src="./images/icon-search.svg" alt="검색하기">
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="ci">
+                    <h1>
+                        FLAT<br>
+                        DESIGN
+                    </h1>
+                </div>
+                <div class="btn-nav">
+                    <div class="line line01"></div>
+                    <div class="line line02"></div>
+                    <div class="line line03"></div>
+                    
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            플랫디자인이란?
+                        </a>                                
+                    </li>
+                    <li>
+                        <a href="#">
+                            갤러리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            게시판
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contents">
+            <div class="flat-info">
+                <h2>플랫 디자인이란</h2>
+                <p>
+                    플랫 디자인이란 복잡한 그래픽 효과를 배제하고 단순한 색상과 구성을 통해 직관적인 인식이 가능하도록 구성하는 2차원 디자인 방식을 의미하며, 깔끔한 인터페이스와 단순화되고 심플한 디자인을 지칭한다.
+                </p>
+            </div>
+            <div class="flat-design">
+                <div class="img-box">
+                    <img src="./images/img-m-flat-design.jpg" alt="플랫이미지">
+                </div>
+                <h3>플랫 디자인</h3>
+                <p>
+                    새가 풀이 청춘의 무엇이 있으랴? 못할 가는 동산에는 꾸며 그들의 뭇 보라. 생의 과실이 가치를 청춘에서만 만천하의 때문이다. 영원히 무엇을 있는 그들은 사람은 그들을 것이다. 미묘한 뜨거운지라, 하여도 있으랴? 없으면 찾아 안고, 자신과 쓸쓸하랴? 아니더면, 이상 오직 청춘 인간의 같으며, 때문이다. 따뜻한 놀이 인생에 실로 얼마나 운다. 전인 보내는 투명하되 아니더면, 사막이다.
+                </p>
+            </div>
+            <div class="flat-txt">
+                <div class="img-box img100">
+                    <img src="./images/icon-flat-text.svg" alt="플랫텍스트">
+                </div>
+                <h3>텍스트를 이용하는 방법</h3>
+                <p>
+                    새가 풀이 청춘의 무엇이 있으랴? 못할 가는 동산에는 꾸며 그들의 뭇 보라. 생의 과실이 가치를 청춘에서만 만천하의 때문이다. 영원히 무엇을 있는 그들은 사람은 그들을 것이다. 미묘한 뜨거운지라, 하여도 있으랴? 없으면 찾아 안고, 자신과 쓸쓸하랴? 아니더면, 이상 오직 청춘 인간의 같으며, 때문이다. 따뜻한 놀이 인생에 실로 얼마나 운다. 전인 보내는 투명하되 아니더면, 사막이다.
+                </p>
+            </div>
+            <div class="flat-img">
+                <div class="img-box img100">
+                    <img src="./images/icon-flat-image.svg" alt="플랫이미지">
+                </div>
+                <h3>이미지를 이용하는 방법</h3>
+                <p>
+                    새가 풀이 청춘의 무엇이 있으랴? 못할 가는 동산에는 꾸며 그들의 뭇 보라. 생의 과실이 가치를 청춘에서만 만천하의 때문이다. 영원히 무엇을 있는 그들은 사람은 그들을 것이다. 미묘한 뜨거운지라, 하여도 있으랴? 없으면 찾아 안고, 자신과 쓸쓸하랴? 아니더면, 이상 오직 청춘 인간의 같으며, 때문이다. 따뜻한 놀이 인생에 실로 얼마나 운다. 전인 보내는 투명하되 아니더면, 사막이다.
+                </p>
+            </div>
+            <div class="flat-icons">
+                <div class="img-box img100">
+                    <img src="./images/icon-flat-icon.svg" alt="플랫아이콘">
+                </div>
+                <h3>아이콘을 이용하는 방법</h3>
+                <p>
+                    새가 풀이 청춘의 무엇이 있으랴? 못할 가는 동산에는 꾸며 그들의 뭇 보라. 생의 과실이 가치를 청춘에서만 만천하의 때문이다. 영원히 무엇을 있는 그들은 사람은 그들을 것이다. 미묘한 뜨거운지라, 하여도 있으랴? 없으면 찾아 안고, 자신과 쓸쓸하랴? 아니더면, 이상 오직 청춘 인간의 같으며, 때문이다. 따뜻한 놀이 인생에 실로 얼마나 운다. 전인 보내는 투명하되 아니더면, 사막이다.
+                </p>
+            </div>
+            <div class="flat-future">
+                <h3>플랫디자인의 미래</h3>
+                <p>
+                    새가 풀이 청춘의 무엇이 있으랴? 못할 가는 동산에는 꾸며 그들의 뭇 보라. 생의 과실이 가치를 청춘에서만 만천하의 때문이다. 영원히 무엇을 있는 그들은 사람은 그들을 것이다.
+                </p>
+            </div>
+        </div>
+        <footer class="footer">
+            <address class="address">
+                Copyright 2021. Mr Hong<br>
+                E-mail : pam7461@gmail
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
