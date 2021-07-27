@@ -1,0 +1,120 @@
+/* CONTENTS Style */
+.slider{
+    margin-top:135px;
+    position:relative;
+}
+.l-arrow{
+    position:absolute;
+    left:12px;
+    top:164px;
+    width:20px;
+    height:20px;
+    border-top:4px solid #ffffff;
+    border-left:4px solid #ffffff;
+    transform:rotate(-45deg);
+}
+.r-arrow{
+    position:absolute;
+    right:12px;
+    top:164px;
+    width:20px;
+    height:20px;
+    border-top:4px solid #ffffff;
+    border-left:4px solid #ffffff;
+    transform:rotate(135deg);
+}
+.contents>div{
+    padding:42px 12px 44px 12px;
+}
+.contents>.slider{
+    padding:0;
+}
+.new-doc{
+    background-color:#ff0101;
+}
+.best-doc{
+    background-color:#ffea01;
+}
+.point-flat{
+    background-color:#2836bc;
+}
+.best-key{
+    background-color:#ff8a01;
+}
+.w3c{
+    background-color:#00f0ff;
+}
+.web-std{
+    background-color:#b400ff;
+}
+.sns{
+    background-color:#ff7e00;
+}
+h2{
+    font-family:'Noto Sans KR';
+    font-weight:700;
+    font-size:24px;
+    color:#ffffff;
+    text-align:center;
+    margin-bottom:27px;
+}
+.new-doc li,.best-doc li,.best-key li{
+    font-family:'Noto Sans KR';
+    font-weight:500;
+    font-size:18px;
+    color:#ffffff;
+    margin-bottom:1px;            
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.new-doc li:hover,.best-doc li:hover,.best-key li:hover{
+    color:#2ecc71;
+}
+.best-key>.first-ul{
+    float:left;
+}
+.best-key>.last-ul{
+    float:right;
+}
+.best-key>ul>li{
+    width:156px;
+    text-align:center;
+}
+.contents>.point-flat{
+    padding-top:50px;
+}
+.point-flat-first{
+    margin-bottom:36px;
+}
+.point-heart{
+    background-color:#ffea01;
+    border-radius:10px;
+    padding:36px 118px 36px 118px;
+}
+
+.point-cloud{
+    background-color:#ff0101;
+    border-radius:10px;
+    padding:36px 118px 36px 118px;
+}
+.w3c>.img-box{
+    padding:0 74px 0 74px;
+}
+.web-std::after,.sns::after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.web-std>div,.sns>.img-box{
+    float:left;
+    width:62px;
+    padding:0 25px 0 25px; 
+}
+h3{
+    font-family:'Noto Sans KR';
+    font-weight:500;
+    font-size:18px;
+    color:#ffffff;
+    text-align:center;
+}
