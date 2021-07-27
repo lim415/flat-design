@@ -5,144 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모바일 플랫디자인</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-        }
-        .wrap{
-            width:360px;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        .header{
-            background-color:#2ecc71;
-        }
-        .header-icons{
-            border-bottom:1px solid #ffffff;
-            padding-top:19px;
-            padding-bottom:19px;
-        }
-        .header-icons>.img-box{
-            display:inline-block;
-            width:30px;
-            margin-left:27px;
-            margin-right:27px;
-        }
-        .header-bottom{
-            padding-top:28px;
-            padding-bottom:28px;
-        }
-        .ci{
-            display:inline-block;
-            width:156px;
-            margin-left:102px;
-        }
-        h1{
-            font-family:'Noto Sans KR';
-            font-weight:700;
-            font-size:24px;
-            line-height:24px;
-            color:#ffffff;
-            text-align:center;
-        }
-        .btn-nav{
-            display:inline-block;
-            width:66px;
-            margin-left:18px;
-        }
-        .line{
-            width:22px;
-            height:2px;
-            margin-left:44px;
-            background-color:#ffffff;
-            border-radius:1px 1px 1px 1px;
-        }
-        .line02{
-            margin-top:7px;
-            margin-bottom:7px;
-        }
-        .line03{
-            margin-bottom:23px;
-        }
-
-        .slider{
-            position:relative;
-        }
-        .l-arrow{
-            position:absolute;
-            left:12px;
-            top:164px;
-            width:20px;
-            height:20px;
-            border-top:4px solid #ffffff;
-            border-left:4px solid #ffffff;
-            transform:rotate(-45deg);
-        }
-        .r-arrow{
-            position:absolute;
-            right:12px;
-            top:164px;
-            width:20px;
-            height:20px;
-            border-top:4px solid #ffffff;
-            border-left:4px solid #ffffff;
-            transform:rotate(135deg);
-        }
-        .contents>div{
-            padding:42px 12px 39px 12px;
-        }
-        .contents>.slider{
-            padding:0;
-        }
-        .new-doc{
-            background-color:#ff0101;
-        }
-        .best-doc{
-            background-color:#ffea01;
-        }
-        .point-flat{
-            background-color:#2836bc;
-        }
-        .best-key{
-            background-color:#ff8a01;
-        }
-        .w3c{
-            background-color:#00f0ff;
-        }
-        .web-std{
-            background-color:#b400ff;
-        }
-        .sns{
-            background-color:#ff7e00;
-        }
-        .new-doc>h2,.best-doc>h2,.best-key>h2{
-            font-family:'Noto Sans KR';
-            font-weight:700;
-            font-size:24px;
-            color:#ffffff;
-            text-align:center;
-            margin-bottom:27px;
-        }
-        .new-doc>ul>li,.best-doc>ul>li,.best-key>ul>li{
-            font-family:'Noto Sans KR';
-            font-weight:500;
-            font-size:18px;
-            color:#ffffff;
-            margin-bottom:12px;
-            list-style:none;
-            white-space:nowrap;
-            overflow:hidden;
-            text-overflow:ellipsis;
-        }
-        
-    </style>
-    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/m-index.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <div class="wrap">
         <header class="header">
-            <div class="header-icons">
+            <div class="header-icons clearfix">
                 <div class="img-box box01">
                     <img src="./images/icon-home.svg" alt="홈으로 이동">
                 </div>
@@ -167,8 +38,28 @@
                     <div class="line line01"></div>
                     <div class="line line02"></div>
                     <div class="line line03"></div>
+                    
                 </div>
             </div>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            플랫디자인이란?
+                        </a>                                
+                    </li>
+                    <li>
+                        <a href="#">
+                            갤러리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            게시판
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <div class="contents">
             <div class="slider">
@@ -198,17 +89,30 @@
                     <li>그러는 너는 누구?</li>
                 </ul>
             </div>
-            <div class="point-flat">포인트플랫</div>
-            <div class="best-key">
+            <div class="point-flat">
+                <div class="point-flat-first">
+                    <div class="img-box point-heart">
+                        <img src="./images/icon-heart.svg" alt="하트">
+                    </div>
+                    <h2>디자인 포인트 플랫</h2>
+                </div>
+                <div class="point-flat-second">
+                    <div class="img-box point-cloud">
+                        <img src="./images/icon-cloud.svg" alt="구름">
+                    </div>
+                    <h2>원색이 포인트 플랫</h2>
+                </div>
+            </div>
+            <div class="best-key clearfix">
                 <h2>인기검색어</h2>
-                <ul>
+                <ul class="first-ul">
                     <li>쁘쁘걸</li>
                     <li>코로나</li>
                     <li>COVID-19</li>
                     <li>FLAT</li>
                     <li>DESIGN</li>
                 </ul>
-                <ul>
+                <ul class="last-ul">
                     <li>W3C</li>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -216,12 +120,48 @@
                     <li>뷰포트</li>
                 </ul>
             </div>
-            <div class="w3c">W3C</div>
-            <div class="web-std">웹표준</div>
-            <div class="sns">SNS</div>
+            <div class="w3c">
+                <div class="img-box">
+                    <img src="./images/w3c.svg" alt="w3c">
+                </div>
+            </div>
+            <div class="web-std">
+                <div class="html">
+                    <h3>HTML</h3>
+                    <div class="img-box">
+                        <img src="./images/icon-html.svg" alt="html">
+                    </div>
+                </div>
+                <div class="css">
+                    <h3>CSS</h3>
+                    <div class="img-box">
+                        <img src="./images/icon-css.svg" alt="css">
+                    </div>
+                </div>
+                <div class="js">
+                    <h3>js</h3>
+                    <div class="img-box">
+                        <img src="./images/icon-js.svg" alt="js">
+                    </div>
+                </div>
+            </div>
+            <div class="sns">
+                <div class="img-box">
+                    <img src="./images/icon-kakao.svg" alt="카카오">
+                </div>
+                <div class="img-box">
+                    <img src="./images/icon-facebook.svg" alt="패이스북">
+                </div>
+                <div class="img-box">
+                    <img src="./images/icon-line.svg" alt="라인">
+                </div>
+            </div>
         </div>
         <footer class="footer">
-            푸터
+            <address class="address">
+                Copyright 2021. Mr Hong<br>
+                E-mail : pam7461@gmail
+            </address>
         </footer>
     </div>
 </body>
